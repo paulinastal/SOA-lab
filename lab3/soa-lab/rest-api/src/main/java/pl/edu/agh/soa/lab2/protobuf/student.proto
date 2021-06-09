@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package pl.edu.agh.soa.lab2;
+option java_package = "pl.edu.agh.soa.lab2.model";
+option java_outer_classname = "StudentProto";
+
+message Student {
+    string name = 2;
+    int32 id = 1;
+    string surname = 3;
+    string avatarPath = 4;
+    map<string, Course> courses = 5;
+}
